@@ -67,6 +67,7 @@ class ReadXML1 {
             //获取包含类名的文本节点
             NodeList nl = doc.getElementsByTagName("className");
             Node classNode = nl.item(0).getFirstChild();
+            //包名+类名
             String cName = "gongchangmoshi." + classNode.getNodeValue();
             System.out.println("新类名："+cName);
             //通过类名生成实例对象并将其返回
